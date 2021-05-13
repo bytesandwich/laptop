@@ -12,6 +12,24 @@ user 'jack' do
   manage_home true
 end
 
+apt_repository 'hashicorp' do
+  uri 'https://apt.releases.hashicorp.com'
+  key 'https://apt.releases.hashicorp.com/gpg'
+  distribution 'focal'
+  components ['main']
+  arch 'amd64'
+  action :add
+end
+
+apt_repository 'docker' do
+  uri 'https://download.docker.com/linux/ubuntu'
+  key 'https://download.docker.com/linux/ubuntu/gpg'
+  distribution 'focal'
+  components ['stable']
+  arch 'amd64'
+  action :add
+end
+
 package "tmux"
 
 # docker
@@ -41,23 +59,6 @@ group "kvm" do
 end
 
 # vagrant
-apt_repository 'hashicorp' do
-  uri 'https://apt.releases.hashicorp.com'
-  key 'https://apt.releases.hashicorp.com/gpg'
-  distribution 'focal'
-  components ['main']
-  arch 'amd64'
-  action :add
-end
-
-apt_repository 'docker' do
-  uri 'https://download.docker.com/linux/ubuntu'
-  key 'https://download.docker.com/linux/ubuntu/gpg'
-  distribution 'focal'
-  components ['stable']
-  arch 'amd64'
-  action :add
-end
 
 package "vagrant"
 package "packer"
@@ -135,8 +136,6 @@ end
 # Anki
 package "anki"
 
-package "lubuntu-desktop"
-
 package "terminator"
 
 package "xmonad"
@@ -163,4 +162,9 @@ package "linux-tools-common"
 package "linux-tools-generic"
 package "linux-tools-5.8.0-50-generic"
 
+package "acpi"
 
+package "tlp"
+package "powertop"
+
+package "smartmontools"
