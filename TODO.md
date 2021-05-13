@@ -1,4 +1,7 @@
 - [ ] add secrets encrypted with yubikey or some other mechanism
+  - https://chipsenkbeil.com/posts/applying-gpg-and-yubikey-part-3-encryption/
+  - https://www.thepolyglotdeveloper.com/2019/02/use-yubikey-pgp-signing-encryption-authentication/
+  - https://developers.yubico.com/PIV/Introduction/Certificate_slots.html
 - [ ] add password from encrypted yubikey
 - [ ] add git cert from encrypted yubikey
 - [ ] add git repos
