@@ -1,0 +1,7 @@
+- [ ] add secrets encrypted with yubikey or some other mechanism
+- [ ] add password from encrypted yubikey
+- [ ] add git cert from encrypted yubikey
+- [ ] add git repos
+- [ ] add vim setup
+- [ ] add dot files 
+- [ ] add configuration for firefox with lastpass
