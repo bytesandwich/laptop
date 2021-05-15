@@ -32,6 +32,18 @@ end
 
 package "tmux"
 
+package "lastpass-cli"
+package "ranger"
+package "moreutils"
+package "jq"
+
+# drill down file size
+package "ncdu"
+
+# copy/past
+package "xclip"
+package "xsel"
+
 # docker
 package "docker-ce"
 package "docker-ce-cli"
