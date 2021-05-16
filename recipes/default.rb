@@ -180,3 +180,25 @@ package "tlp"
 package "powertop"
 
 package "smartmontools"
+
+
+# Building the kernel
+
+package "autoconf"
+package "bison"
+package "build-essential"
+package "flex"
+package "gawk"
+package "kernel-package"
+package "libelf-dev"
+package "libiberty-dev"
+package "libncurses-dev"
+package "libpci-dev"
+package "libssl-dev"
+package "libudev-dev"
+package "openssl"
+package "gnupg2"
+
+
+# Fixing ZFS
+package "zfs-dkms"
