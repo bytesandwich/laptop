@@ -3,3 +3,5 @@ nmtui                   starts a wifi picker
 hcitool -i hci0 scan    scan for bluetooth devices
 bluetoothctl            scan | trust | connect
 
+acpi                    show power percent
+systemctl suspend       hibernate
